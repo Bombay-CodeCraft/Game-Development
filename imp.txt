@@ -1,0 +1,63 @@
+g++ Server.cpp -std=c++17 -pthread -o server
+
+
+g++ Client.cpp -std=c++17 -pthread -o client
+after 
+./server 
+
+for windows 
+
+g++ Server.cpp -std=c++17 -pthread -lws2_32 -o Server.exe
+g++ Client.cpp -std=c++17 -pthread -lws2_32 -o Client.exe
+
+after 
+.\Server.exe
+
+
+#include <iostream>
+
+Input aur Output ke liye.
+
+#include <vector>
+
+Dynamic Array.
+
+#include <thread>
+
+Multithreading ke liye.
+
+#include <mutex>
+
+Shared data ko protect karta hai.
+
+#include <algorithm>
+
+Useful functions ke liye.
+
+#include <sys/socket.h>
+
+Socket programming ka main header.
+
+#include <netinet/in.h>
+
+Internet Address Structures.
+
+#include <arpa/inet.h>
+
+IP Address conversion.
+
+#include <unistd.h>
+
+Linux system calls.
+
+Windows Headers
+#include <iostream>
+#include <vector>
+#include <thread>
+#include <mutex>
+#include <algorithm>
+
+#include <winsock2.h>
+#include <ws2tcpip.h>
+
+#pragma comment(lib,"ws2_32.lib")
